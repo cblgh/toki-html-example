@@ -50,6 +50,9 @@
 		    <li>{{ .Translator.String "Spring wheat flour (aka bread flour)" }}</li>
 		</ul>
 	    </section>
+	    <section>
+		<code>{{ .Translator.String "{date-medium} {name} proposed: {text}" .Time .NeutralName .Action }}</code>
+	    </section>
 	</main>
     </body>
 </html>

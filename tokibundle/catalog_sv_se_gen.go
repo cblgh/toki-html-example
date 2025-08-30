@@ -39,6 +39,9 @@ var writers_sv_se = map[string]func(w io.Writer, args ...any) (int, error){
 	msg7bb3ef92a7e3143: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "När det kommer till vetemjöl finns det en stor variation och därtill olika nivåer av näringsinnehåll. Ju mer det finns av det ursprungliga vetkornet kvar i mjölet, desto bättre. Stenmalna mjöler är inte bara en fluga, utan ett tecken som tyder på att detta mjöl antagligen har en större andel fiber och näring")
 	},
+	msgadaaf2bd729300b7: func(w io.Writer, args ...any) (written int, err error) {
+		return wrs(w, "Baka bröd")
+	},
 	msgbbeadd7d919a7262: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "På denna sida samlar jag en del av mina favvomjölsorter")
 	},
@@ -56,6 +59,41 @@ var writers_sv_se = map[string]func(w io.Writer, args ...any) (int, error){
 	},
 	msgda9447c71e9d623c: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "Mina mjöllistor")
+	},
+	msgdc9cd0d10c2be12: func(w io.Writer, args ...any) (written int, err error) {
+		var n int
+		n, err = io.WriteString(w, tr_sv_se.FmtDateMedium(args[0].(time.Time)))
+		if err != nil {
+			return written, err
+		}
+		written += n
+		n, err = wrs(w, " ")
+		if err != nil {
+			return written, err
+		}
+		written += n
+		{
+			s, _ := sv(args[1])
+			n, err = wrs(w, s)
+		}
+		if err != nil {
+			return written, err
+		}
+		written += n
+		n, err = wrs(w, " föreslog: ")
+		if err != nil {
+			return written, err
+		}
+		written += n
+		{
+			s, _ := sv(args[2])
+			n, err = wrs(w, s)
+		}
+		if err != nil {
+			return written, err
+		}
+		written += n
+		return written, nil
 	},
 	msgddbcdfb79053245d: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "Glutenfria mjöler är viktigt av allergianledningar och för att kunna baka godsaker till vänner utan att ta kål på dem. De är också viktiga för bröd-bakning.")

@@ -11,6 +11,7 @@ import (
 	"errors"
 	"fmt"
 	"flag"
+	"time"
 	"log"
 	"net/http"
 	"syscall"
@@ -57,6 +58,9 @@ func Check(err error, msg string, args ...interface{}) {
 
 type IndexData struct{
 	Translator tokibundle.Reader
+	Time time.Time
+	NeutralName string
+	Action string
 }
 
 type Handler struct {
@@ -77,7 +81,7 @@ func (h Handler) renderView(res http.ResponseWriter, viewName string, data Index
 }
 
 func (h Handler) indexRoute (res http.ResponseWriter, req *http.Request) {
-	h.renderView(res, "index", IndexData{Translator: h.Translator})
+	h.renderView(res, "index", IndexData{Translator: h.Translator, Time: time.Now(), NeutralName: "Frank", Action: h.Translator.String("Bake bread") })
 }
 
 // NOTE: since toki doesn't currently parse {{ .GoFunction "param" }} inside .html files, i have to expose all the keys

@@ -39,6 +39,9 @@ var writers_en = map[string]func(w io.Writer, args ...any) (int, error){
 	msg7bb3ef92a7e3143: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "When it comes to wheat flours, there is a great variety and with varying levels of nutrition. The more of the grain left in the flour, the better. Stone-milled flours are not just a fad, but a sign that says that this flour likely has more fiber and nutrition")
 	},
+	msgadaaf2bd729300b7: func(w io.Writer, args ...any) (written int, err error) {
+		return wrs(w, "Bake bread")
+	},
 	msgbbeadd7d919a7262: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "On this page I will collect a few of my favourite flour varieties")
 	},
@@ -56,6 +59,41 @@ var writers_en = map[string]func(w io.Writer, args ...any) (int, error){
 	},
 	msgda9447c71e9d623c: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "My flour lists")
+	},
+	msgdc9cd0d10c2be12: func(w io.Writer, args ...any) (written int, err error) {
+		var n int
+		n, err = io.WriteString(w, tr_en.FmtDateMedium(args[0].(time.Time)))
+		if err != nil {
+			return written, err
+		}
+		written += n
+		n, err = wrs(w, " ")
+		if err != nil {
+			return written, err
+		}
+		written += n
+		{
+			s, _ := sv(args[1])
+			n, err = wrs(w, s)
+		}
+		if err != nil {
+			return written, err
+		}
+		written += n
+		n, err = wrs(w, " proposed: ")
+		if err != nil {
+			return written, err
+		}
+		written += n
+		{
+			s, _ := sv(args[2])
+			n, err = wrs(w, s)
+		}
+		if err != nil {
+			return written, err
+		}
+		written += n
+		return written, nil
 	},
 	msgddbcdfb79053245d: func(w io.Writer, args ...any) (written int, err error) {
 		return wrs(w, "Gluten-free flours are important for allergy reasons and being able to make things for friends that won't kill them. They are also important for bread-baking.")

@@ -23,6 +23,10 @@
 	"@msg7bb3ef92a7e3143": {
 		"type": "text"
 	},
+	"msgadaaf2bd729300b7": "Bake bread",
+	"@msgadaaf2bd729300b7": {
+		"type": "text"
+	},
 	"msgbbeadd7d919a7262": "On this page I will collect a few of my favourite flour varieties",
 	"@msgbbeadd7d919a7262": {
 		"type": "text"
@@ -45,6 +49,25 @@
 	},
 	"msgda9447c71e9d623c": "My flour lists",
 	"@msgda9447c71e9d623c": {
+		"type": "text"
+	},
+	"msgdc9cd0d10c2be12": "{var0, date, medium} {var1} proposed: {var2}",
+	"@msgdc9cd0d10c2be12": {
+		"placeholders": {
+			"var0": {
+				"type": "DateTime",
+				"description": "date",
+				"isCustomDateFormat": true
+			},
+			"var1": {
+				"type": "String",
+				"description": "arbitrary string with gender information"
+			},
+			"var2": {
+				"type": "String",
+				"description": "arbitrary string"
+			}
+		},
 		"type": "text"
 	},
 	"msgddbcdfb79053245d": "Gluten-free flours are important for allergy reasons and being able to make things for friends that won''t kill them. They are also important for bread-baking.",

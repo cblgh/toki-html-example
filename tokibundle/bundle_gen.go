@@ -381,12 +381,14 @@ const (
 	msg29f53e485d987b3a = `Rice flour`
 	msg74b8f28e46dd53ca = `Wheat flours`
 	msg7bb3ef92a7e3143  = `When it comes to wheat flours, there is a great variety and with varying levels of nutrition. The more of the grain left in the flour, the better. Stone-milled flours are not just a fad, but a sign that says that this flour likely has more fiber and nutrition`
+	msgadaaf2bd729300b7 = `Bake bread`
 	msgbbeadd7d919a7262 = `On this page I will collect a few of my favourite flour varieties`
 	msgccdcc7fa59d07e9  = `Spring wheat flour (aka bread flour)`
 	msgce17bb72c4cbde42 = `Graham flour`
 	msgd2b12e933df64c21 = `Almond flour`
 	msgd705fc92646475e1 = `Spelt flour`
 	msgda9447c71e9d623c = `My flour lists`
+	msgdc9cd0d10c2be12  = `{date-medium} {name} proposed: {text}`
 	msgddbcdfb79053245d = `Gluten-free flours are important for allergy reasons and being able to make things for friends that won't kill them. They are also important for bread-baking.`
 	msge6f7796c88d8fbbc = `Gluten-free flours`
 	msgf445564e16921617 = `Chickpea flour`

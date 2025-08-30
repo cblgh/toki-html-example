@@ -2,8 +2,10 @@
 package translations
 import (
 	"eyeneighteenn/tokibundle"
+	"time"
 )
 func Translations(t tokibundle.Reader) {
+	time.Now()
 	// LOOP
 	t.String("Flour site")
 	t.String("My flour lists")
@@ -19,4 +21,5 @@ func Translations(t tokibundle.Reader) {
 	t.String("Spelt flour")
 	t.String("Graham flour")
 	t.String("Spring wheat flour (aka bread flour)")
+	t.String("{date-medium} {name} proposed: {text}", time.Now(), tokibundle.String{Value: "Neutralo", Gender: tokibundle.GenderNeutral}, "GenericAction")
 }
