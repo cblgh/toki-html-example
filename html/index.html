@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<title>{{ .Translator.String "Flour site" }}</title>
+
+         <style>
+            /* reset */
+            *,*::after,*::before{box-sizing:border-box}blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}ul[role='list'],ol[role='list']{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion: reduce){html:focus-within{scroll-behavior:auto}*,*::after,*::before{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}}
+            details, form {
+                padding: 0;
+                margin: 0;
+            }
+            /* end reset */
+            html {
+                max-width: 50rem;
+                font-family: sans-serif;
+            }
+            li { margin-bottom: 0rem; }
+            ul { padding-left: 1rem; }
+            h1, h2 { margin-bottom: 1rem; }
+            p { margin-bottom: 1rem;  }
+
+            body { padding: 2rem; }
+            * { margin-bottom: 1rem; }
+        </style>
+    </head>
+    <body>
+	<main>
+	    <h1>{{ .Translator.String "My flour lists" }}</h1>
+	    <p>{{ .Translator.String "On this page I will collect a few of my favourite flour varieties" }}</p>
+	    <section>
+		<h2>{{ .Translator.String "Gluten-free flours" }}</h2>
+		<p>{{ .Translator.String "Gluten-free flours are important for allergy reasons and being able to make things for friends that won't kill them. They are also important for bread-baking." }}</p>
+		<p>{{ .Translator.String "When baking gluten-free goods, it's typically best to mix a few different kinds of flours" }}</p>
+		<ul>
+		    <li>{{ .Translator.String "Rice flour" }}</li>
+		    <li>{{ .Translator.String "Chickpea flour" }}</li>
+		    <li>{{ .Translator.String "Almond flour" }}</li>
+		</ul>
+	    </section>
+	    <section>
+		<h2>{{ .Translator.String "Wheat flours" }}</h2>
+		<p>{{ .Translator.String "When it comes to wheat flours, there is a great variety and with varying levels of nutrition. The more of the grain left in the flour, the better. Stone-milled flours are not just a fad, but a sign that says that this flour likely has more fiber and nutrition" }}</p>
+		<ul>
+		    <li>{{ .Translator.String "Spelt flour" }}</li>
+		    <li>{{ .Translator.String "Graham flour" }}</li>
+		    <li>{{ .Translator.String "Spring wheat flour (aka bread flour)" }}</li>
+		</ul>
+	    </section>
+	</main>
+    </body>
+</html>

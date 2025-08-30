@@ -1,0 +1,62 @@
+{
+	"@@locale": "en-GB",
+	"@@last_modified": "2025-08-30T17:47:06+02:00",
+	"@@x-generator": "github.com/romshark/toki",
+	"@@x-generator-version": "0.8.3",
+	"msg174d508b7de4a66e": "",
+	"@msg174d508b7de4a66e": {
+		"type": "text"
+	},
+	"msg1837c1944267e92c": "",
+	"@msg1837c1944267e92c": {
+		"type": "text"
+	},
+	"msg29f53e485d987b3a": "",
+	"@msg29f53e485d987b3a": {
+		"type": "text"
+	},
+	"msg74b8f28e46dd53ca": "",
+	"@msg74b8f28e46dd53ca": {
+		"type": "text"
+	},
+	"msg7bb3ef92a7e3143": "",
+	"@msg7bb3ef92a7e3143": {
+		"type": "text"
+	},
+	"msgbbeadd7d919a7262": "",
+	"@msgbbeadd7d919a7262": {
+		"type": "text"
+	},
+	"msgccdcc7fa59d07e9": "",
+	"@msgccdcc7fa59d07e9": {
+		"type": "text"
+	},
+	"msgce17bb72c4cbde42": "",
+	"@msgce17bb72c4cbde42": {
+		"type": "text"
+	},
+	"msgd2b12e933df64c21": "",
+	"@msgd2b12e933df64c21": {
+		"type": "text"
+	},
+	"msgd705fc92646475e1": "",
+	"@msgd705fc92646475e1": {
+		"type": "text"
+	},
+	"msgda9447c71e9d623c": "",
+	"@msgda9447c71e9d623c": {
+		"type": "text"
+	},
+	"msgddbcdfb79053245d": "",
+	"@msgddbcdfb79053245d": {
+		"type": "text"
+	},
+	"msge6f7796c88d8fbbc": "",
+	"@msge6f7796c88d8fbbc": {
+		"type": "text"
+	},
+	"msgf445564e16921617": "",
+	"@msgf445564e16921617": {
+		"type": "text"
+	}
+}
